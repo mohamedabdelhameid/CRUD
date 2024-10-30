@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/master.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="Boody bg-dark">
+    <div class="container">
+      <h1 class="text-center text-primary p-5">CRUD</h1>
+      <form class="Forms row justify-content-between" onsubmit="createStu()">
+        <h4 class="text-primary mt-2">Student Name:</h4>
+        <input type="text" placeholder="First Name" class="col-md-6 rounded-pill col-12 p-3" id="FName" required>
+        <input type="text" placeholder="Last Name" class="col-md-6 rounded-pill col-12 p-3" id="LName" required>
+        <h4 class="text-primary mt-2">Student Age:</h4>
+        <input type="number" placeholder="Day" min="1" max="30" class="col-md-4 rounded-pill col-12 p-3" id="Day" required>
+        <input type="number" placeholder="Month" min="1" max="12" class="col-md-4 rounded-pill col-12 p-3" id="Month" required>
+        <input type="number" placeholder="Year" min="1" max="2024" class="col-md-4 rounded-pill col-12 p-3" id="Year" required>
+        <h4 class="text-primary mt-2">Student Id:</h4>
+        <input type="text" placeholder="Id Number" class="rounded-pill col-12 p-3" id="idNumber" required>
+        <h4 class="text-primary mt-2">Education:</h4>
+        <input type="text" placeholder="School / University" class="col-md-6 rounded-pill col-12 p-3" id="School" required>
+        <input type="text" placeholder="City" class="col-md-6 rounded-pill col-12 p-3" id="City" required>
+        <button class="btn btn-outline-primary rounded-pill col-12 p-3 mt-2 fw-bold" id="btn1">Add</button>
+        <button class="btn btn-outline-primary rounded-pill col-12 p-3 mt-2 fw-bold addNone" id="btn2">Update</button>
+        <div class="col-12" id="div2Num"></div>
+      </form>
+      <div class="Tables" id="Tabbles"></div>
+      <div class="tablesDetail" id="tableDetails"></div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

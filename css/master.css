@@ -1,0 +1,9 @@
+.Boody{
+  min-height: 100vh;
+}
+.special{
+  border: none;
+}
+.addNone{
+  display: none !important;
+}
